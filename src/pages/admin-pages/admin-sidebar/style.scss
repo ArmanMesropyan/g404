@@ -1,0 +1,35 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-admin-sidebar {
+  padding: 60px 0;
+  justify-content: space-between;
+  height: 100vh;
+  .L-admin-sidebar-list {
+    align-items: center;
+    lI , .L-admin-sidebar-link-active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      color: $white;
+      cursor: pointer;
+
+      &:hover{
+        color: $green-03;
+        transition: $transition;
+      }
+      span {
+        font-size: 25px;
+        margin: 10px 0;
+      }
+
+      p {
+        margin: 15px 0;
+      }
+    }
+    .L-admin-sidebar-link-active{
+      color: $green-03;
+    }
+  }
+}

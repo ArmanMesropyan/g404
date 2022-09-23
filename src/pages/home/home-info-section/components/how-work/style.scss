@@ -1,0 +1,38 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-how-it-work {
+  padding-top: 100px;
+
+  h5 {
+    font-size: 40px;
+  }
+
+  .L-how-it-work-content {
+    padding: 20px 0;
+
+    .L-how-it-work-child {
+      border-bottom: 1px solid $grey-base;
+      padding: 25px 0;
+      @include screen-max-width-991{
+        padding: 10px 0;
+      }
+      p {
+        @include screen-max-width-991 {
+          width: 100%;
+        }
+        font-size: 22px;
+        color: $grey-03;
+      }
+
+      b {
+        @include screen-max-width-991 {
+          width: 100%;
+          margin: 10px 0;
+        }
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+}

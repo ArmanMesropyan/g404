@@ -1,0 +1,119 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-header-wrapper {
+  width: 100%;
+  background-color: $black;
+  color: $grey-05;
+  font-family: 'General Sans';
+
+  .L-header {
+    .L-header-links {
+      width: 100%;
+      padding: 40px 0;
+      a{
+        color: $white;
+        &:hover{
+          color: $blue;
+          transition: $transition;
+        }
+      }
+      .L-header-link {
+        .L-header-icon {
+          display: flex;
+          align-items: center;
+
+          span {
+            color: $white;
+          }
+
+          .icon-user {
+            font-size: 23px;
+
+            &:hover {
+              color: $white;
+              cursor: auto
+            }
+          }
+        }
+
+        &:first-child {
+          width: 20%;
+          font-size: 26px;
+          &:hover{
+            color: $blue;
+            transition: $transition;
+            cursor: pointer;
+          }
+          @include screen-max-width-991 {
+            width: 30%;
+          }
+          @include screen-max-width-767 {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 60%;
+          @include screen-max-width-991 {
+            width: 70%;
+          }
+          @include screen-max-width-767 {
+            width: 100%;
+            margin: 10px 0;
+          }
+        }
+
+        &:nth-child(3) {
+          width: 20%;
+          display: flex;
+          justify-content: flex-end;
+          @include screen-max-width-991 {
+            width: 100%;
+            margin: 10px 0;
+            justify-content: center;
+          }
+
+          span {
+            margin: 0 4px;
+            font-size: 20px;
+
+            &:hover {
+              color: $blue;
+              transition: $transition;
+              cursor: pointer;
+            }
+
+            @include screen-max-width-576 {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .L-header-links-child {
+          justify-content: center;
+          @include screen-max-width-576 {
+            flex-wrap: wrap;
+          }
+
+          .L-header-link-child {
+            margin: 0 25px;
+            font-size: 20px;
+            @include screen-max-width-576 {
+              font-size: 16px;
+              margin: 5px;
+            }
+
+            &:hover {
+              color: $blue;
+              transition: $transition;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

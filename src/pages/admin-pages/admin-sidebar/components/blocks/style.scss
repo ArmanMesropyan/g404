@@ -1,0 +1,81 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-sidebar-block-wrapper {
+  font-family: "General Sans";
+  position: absolute;
+  width: 300px;
+  height: 100vh;
+  background-color: $grey-05;
+  top: 0%;
+  left: 6%;
+  overflow-y: scroll;
+  z-index: 59;
+  @include screen-max-width-1300{
+    left: 10%;
+  }
+  @include screen-max-width-767{
+    left: 12%;
+  }
+  @include screen-max-width-576{
+    left: 17%;
+  }
+  .L-sidebar-block-input {
+    padding: 30px 10px;
+    width: 100%;
+    margin-left: 10px;
+
+    input {
+      padding: 2px 10px;
+      width: 90%;
+      position: relative;
+      border: 1px solid $grey-03;
+      border-radius: 5px;
+    }
+
+    span {
+      position: absolute;
+      right: 14%;
+      top: 4.5%;
+    }
+  }
+
+  .L-block-title-title {
+    background-color: $grey-base;
+    color: $white;
+    p {
+      padding: 10px 20px;
+    }
+  }
+
+  .L-blocks-content {
+    p {
+      padding: 10px 20px;
+      color: $grey-03;
+      font-size: 14px;
+    }
+
+    .L-block-arrows {
+      text-align: right;
+      margin-right: 30px;
+      opacity: 0.3;
+      margin-top: 20px;
+
+    }
+
+    .L-block-child {
+      width: 199px;
+      height: 129px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 15px 0 0 20px;
+      cursor: pointer;
+      &:hover{
+        transition: $transition;
+        transform: scale(1.1);
+      }
+
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+.L-footer{
+  width: 100%;
+  background-color: $black;
+  color: $grey-05;
+  font-family: "General Sans";
+  .L-footer-content{
+    padding-top: 70px;
+    width: 100%;
+    h5{
+      font-size: 40px;
+       width: 28%;
+      @include screen-max-width-991{
+        width: 30%;
+      }
+      @include screen-max-width-576{
+        width: 100%;
+        font-size: 28px;
+      }
+    }
+    .L-footer-content-child{
+      margin-top: 50px;
+      width: 30%;
+      height: 80px;
+      @include screen-max-width-1024{
+        width: 50%;
+      }
+      @include screen-max-width-576{
+        width: 100%;
+      }
+      .L-footer-content-pre-child{
+        width: 33.33%;
+        p{
+          font-size: 17px;
+        }
+        @include screen-max-width-767{
+          width: 50%;
+          margin: 10px 0;
+        }
+      }
+    }
+
+  }
+  .L-footer-info{
+    margin-top: 70px;
+    border-top: 1px solid $grey-base;
+    padding: 20px 0;
+    width: 100%;
+    b{
+      font-size: 26px;
+      @include screen-max-width-576{
+        width: 100%;
+      }
+    }
+    p{
+      width: 30%;
+      font-size: 15px;
+      color: $grey-04;
+      font-family: "Roboto Light";
+      @include screen-max-width-576{
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+}

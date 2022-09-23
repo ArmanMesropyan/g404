@@ -1,0 +1,88 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-start-now {
+  padding: 200px 0 170px 0;
+  width: 50%;
+  margin: 0 auto;
+  @include screen-max-width-1300 {
+    width: 60%;
+  }
+  @include screen-max-width-1024 {
+    width: 70%;
+  }
+  @include screen-max-width-576 {
+    width: 100%;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 90px;
+    position: relative;
+
+    @include screen-max-width-1300 {
+      font-size: 80px;
+    }
+    @include screen-max-width-1024 {
+      font-size: 70px;
+    }
+    @include screen-max-width-767 {
+      font-size: 50px;
+      width: 100%;
+    }
+    @include screen-max-width-576 {
+      font-size: 40px;
+    }
+
+    p {
+      font-weight: lighter;
+      color: $grey-base;
+      right: 0%;
+      top: 64%;
+      position: absolute;
+      width: 260px;
+      font-size: 20px;
+      @include screen-max-width-1024 {
+        right: 10%;
+      }
+      @include screen-max-width-991 {
+        position: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  .L-start-btn-block {
+    display: flex;
+    justify-content: flex-end;
+    @include screen-max-width-1024 {
+      justify-content: center;
+    }
+
+    .L-start-btn {
+      width: 180px;
+      height: 40px;
+      font-size: 22px;
+      background-color: transparent;
+      color: $blue;
+      border: 2px solid $blue;
+      margin: 10px 0;
+
+      a {
+        color: $blue;
+      }
+
+      &:hover {
+        background-color: $blue;
+        transition: $transition;
+        color: $white;
+        a{
+          color: $white;
+          transition: $transition;
+
+        }
+      }
+    }
+  }
+
+}

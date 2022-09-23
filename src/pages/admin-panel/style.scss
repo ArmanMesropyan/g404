@@ -1,0 +1,85 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-admin-panel {
+  font-family: "General Sans";
+
+  .L-admin-panel-header {
+    background-color: $grey-05;
+    padding: 30px;
+
+    .L-admin-panel-header-child {
+      &:first-child {
+        a {
+          font-size: 26px;
+          color: $black;
+
+          &:hover {
+            color: $blue;
+            transition: $transition;
+          }
+        }
+      }
+
+      &:last-child {
+        p {
+          margin: 0 5px;
+
+          span {
+            color: $black;
+            font-size: 26px;
+          }
+
+          font-size: 20px;
+        }
+
+        .L-admin-panel-user-logo {
+          margin: 0 10px;
+          width: 40px;
+          height: 40px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .L-admin-panel-btn {
+    margin: 30px;
+
+    button {
+      width: 260px;
+      height: 45px;
+      background-color: transparent;
+      border-color: $blue;
+      color: $blue;
+      font-size: 22px;
+
+      &:hover {
+        background-color: $blue;
+        transition: $transition;
+        color: $white;
+      }
+    }
+  }
+
+  .L-admin-web-wrapper {
+    justify-content: space-around;
+    .L-admin-web-image {
+      @include screen-max-width-1024{
+        width: 100%;
+      }
+      border-radius: 20px;
+      margin: 10px;
+      width: 47%;
+      height: 420px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      &:nth-child(3), &:nth-child(4){
+        height: 190px;
+      }
+    }
+  }
+}

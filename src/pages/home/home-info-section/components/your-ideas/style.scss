@@ -1,0 +1,137 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-your-ideas {
+  padding-top: 100px;
+
+  h5 {
+    font-size: 40px;
+    font-weight: bolder;
+    width: 37%;
+    @include screen-max-width-767 {
+      width: 70%;
+    }
+    @include screen-max-width-576 {
+      font-size: 26px;
+    }
+
+    span {
+      font-weight: lighter;
+      font-style: italic;
+      color: $blue;
+    }
+  }
+
+  .L-your-ideas-slider {
+    margin-top: 50px;
+    width: 100%;
+
+    .slick-slider {
+      position: relative;
+
+      .slick-dots {
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: 111%;
+        left: 25%;
+        @include screen-max-width-767{
+          left: 20%;
+        }
+        @include screen-max-width-576{
+          top: 118% ;
+          left: 17%;
+        }
+        li {
+          width: 70%;
+          display: none;
+          font-size: 20px;
+          @include screen-max-width-1024 {
+            font-size: 15px;
+          }
+
+          .ft-slick__dots--custom {
+            width: 100%;
+          }
+        }
+
+        .slick-active {
+          display: block;
+          color: $grey-03;
+        }
+      }
+
+      .L-arrow-slider-next {
+
+        position: absolute;
+        top: 110%;
+        left: 32%;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .L-arrow-slider-prev {
+        @include screen-max-width-767 {
+          left: 12%;
+        }
+        position: absolute;
+        top: 110%;
+        left: 22%;
+        font-size: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .L-your-ideas-image-background {
+      margin-top: 60px;
+      opacity: 0.8;
+      background-color: #E8DCD0;
+      width: 405px;
+      height: 269px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include screen-max-width-1300 {
+        width: 360px;
+        height: 240px;
+        margin-top: 40px;
+      }
+      @include screen-max-width-1024 {
+        width: 250px;
+        height: 150px;
+        margin-top: 20px;
+      }
+      @include screen-max-width-1024 {
+        width: 250px;
+        height: 250px;
+        margin-top: 60px;
+      }
+    }
+
+    .slick-current {
+      .L-your-ideas-image-background {
+        margin-top: 0px;
+        width: 632px;
+        height: 400px;
+        opacity: 1;
+        transition: $transition;
+        @include screen-max-width-1300 {
+          width: 450px;
+          height: 320px;
+        }
+        @include screen-max-width-1024 {
+          width: 350px;
+          height: 220px;
+        }
+        @include screen-max-width-991 {
+          width: 90%;
+          height: 420px;
+        }
+        @include screen-max-width-576 {
+          height: 350px;
+        }
+      }
+    }
+
+  }
+}

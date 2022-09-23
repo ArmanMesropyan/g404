@@ -1,0 +1,62 @@
+@import 'src/assets/style/variables';
+@import 'src/assets/style/mixin';
+
+.L-home-about {
+    padding:  90px 0;
+    h3 {
+        width:38%;
+        font-size: 40px;
+        @include screen-max-width-991{
+            width:70%;
+        }
+        @include screen-max-width-576{
+           font-size: 28px;
+            width:90%;
+        }
+    }
+    .L-home-about-btns-group {
+        width: 65%;
+        margin-top: 30px;
+        @include screen-max-width-991{
+            width:90%;
+        }
+        @include screen-max-width-767{
+            width:100%;
+        }
+        .L-home-about-btn {
+            width: 27%;
+            margin: 10px 20px ;
+            @include screen-max-width-576{
+                width:100%;
+            }
+            button {
+                width: 100%;
+                min-height: 40px;
+                padding: 5px 10px;
+                background-color: transparent;
+                color: $grey-05;
+                font-size: 20px;
+                &:hover{
+                    background-color: $blue;
+                    color: $grey-base;
+                    transition: $transition;
+                    border-color:$blue ;
+                }
+            }
+            &:nth-child(4) {
+                width: 54%;
+                @include screen-max-width-576{
+                    width:100%;
+                }
+            }
+
+            &:nth-child(5) {
+                width: 34%;
+                @include screen-max-width-576{
+                    width:100%;
+                }
+            }
+        }
+
+    }
+}
