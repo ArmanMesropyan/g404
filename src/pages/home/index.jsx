@@ -17,7 +17,7 @@ const Home = () => {
                     <div className='L-title-block'>
                         <h1 className='L-home-page-title'>Create Your Web Site With <span>SPSE Builder</span></h1>
                         <div className='L-home-btn-block'>
-                            <NavLink to='/admin'>
+                            <NavLink to='/adminHome'>
                             <button className='G-button-home L-home-btn'>
                                     Start Now
                             </button>

@@ -21,11 +21,18 @@ const AdminPanel = () => {
                 </div>
             </div>
             <div className='L-admin-panel-btn'>
-                <button className='G-button-home'>
+                <button className='G-button-home L-home-admin-btn'>
                     Choos category
                 </button>
             </div>
             <div className='L-admin-web-wrapper G-flex G-flex-wrap'>
+                <NavLink to='/admin'>
+                    <div
+                        className='L-admin-web-image'
+                        style={{backgroundImage: `url('${image1}')`}}
+                    />
+                </NavLink>
+
                 <div
                     className='L-admin-web-image'
                     style={{backgroundImage: `url('${image1}')`}}

@@ -28,9 +28,8 @@ const AdminHomePage = () => {
                         </div>
                         <div className='L-admin-home-header-links G-flex'>
                             <span className='icon-star'/>
-                            <NavLink to='/adminHome'>
-                                <span className='icon-user-circle-o'/>
-                            </NavLink>
+                            <span className='icon-user-circle-o'/>
+
                         </div>
                     </div>
                     <div className="L-admin-home-content">
