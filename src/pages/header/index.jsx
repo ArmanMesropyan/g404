@@ -7,10 +7,10 @@ const Header = () => {
         <div className='L-header-wrapper'>
             <div className='L-header G-container'>
                 <ul className='L-header-links G-flex G-justify-between G-align-center G-flex-wrap'>
-                    <NavLink  className='L-header-link' to='/home'>SPSE</NavLink>
+                    <NavLink className='L-header-link' to='/home'>SPSE</NavLink>
                     <li className='L-header-link'>
                         <ul className='L-header-links-child G-flex'>
-                            <li className='L-header-link-child'>Templates</li>
+                            <NavLink to='/adminHome' className='L-header-link-child'>Templates</NavLink>
                             <li className='L-header-link-child'>Made with us</li>
                             <li className='L-header-link-child'>Pricing</li>
                         </ul>

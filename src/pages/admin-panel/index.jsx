@@ -2,6 +2,7 @@ import React from 'react';
 import userPhoto from '../../assets/image/userPhoto.png'
 import './style.scss'
 import {NavLink} from "react-router-dom";
+import image0 from '../../assets/image/img_web5.png'
 import image1 from '../../assets/image/img_web1.png'
 import image2 from '../../assets/image/img_web2.png'
 import image3 from '../../assets/image/img_web3.png'
@@ -29,7 +30,7 @@ const AdminPanel = () => {
                 <NavLink to='/admin'>
                     <div
                         className='L-admin-web-image'
-                        style={{backgroundImage: `url('${image1}')`}}
+                        style={{backgroundImage: `url('${image0}')`}}
                     />
                 </NavLink>
 
