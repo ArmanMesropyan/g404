@@ -7,7 +7,7 @@ const StartNow = () => {
         <div className='L-start-now'>
             <h5>Customize Any Website<p>We give you the freedom to create any website you want.</p></h5>
             <div className='L-start-btn-block'>
-                <NavLink to='/admin'>
+                <NavLink to='/adminHome'>
                     <button className='G-button-home L-start-btn'>
                         Start Now
                     </button>
