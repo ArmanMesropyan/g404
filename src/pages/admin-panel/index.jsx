@@ -23,7 +23,7 @@ const AdminPanel = () => {
             </div>
             <div className='L-admin-panel-btn'>
                 <button className='G-button-home L-home-admin-btn'>
-                    Choos category
+                    Choose category
                 </button>
             </div>
             <div className='L-admin-web-wrapper G-flex G-flex-wrap'>
